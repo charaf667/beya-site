@@ -179,75 +179,72 @@ body {
 
 /* Media Queries */
 @media (min-width: 475px) {
+  .video-container {
+    width: 90%; /* Ajustez la largeur pour les écrans plus petits */
+    max-width: 350px; /* Largeur maximale pour les écrans moyens */
+    padding-bottom: 56.25%; /* Maintien du ratio 16:9 */
+  }
   .container {
-    max-width: 475px;
+    max-width: 400px;
+    padding-bottom: 3rem; /* Ajustez le padding si nécessaire */
   }
   .b {
-    font-size: var(--size-large);
-    line-height: 1.5;
-    color: #FFD700;
-    text-align: center;
+    font-size: var(--size-lg); /* Ajustez la taille de la police */
   }
   .footer-text {
-    font-size: var(--size-2xl);
-    color: var(--clr--rose);
-  }
-  .video-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
+    font-size: var(--size-xl); /* Ajustez la taille de la police */
   }
 }
 
+/* Pour les écrans de 640px et plus */
 @media (min-width: 640px) {
+  .video-container {
+    width: 80%; /* Ajustez la largeur pour les écrans plus grands */
+    max-width: 640px; /* Largeur maximale pour les écrans larges */
+    padding-bottom: 56.25%; /* Maintien du ratio 16:9 */
+  }
   .container {
     max-width: 640px;
   }
   .b {
-    font-size: var(--size-xl);
-    line-height: 1.5;
-    color: #FFD700;
-    text-align: center;
+    font-size: var(--size-xl); /* Ajustez la taille de la police */
   }
   .footer-text {
-    font-size: var(--size-xl);
-    color: var(--clr--rose);
+    font-size: var(--size-xl); /* Ajustez la taille de la police */
   }
   .video-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-    max-height: 50%;
-    }
+    max-height: 50%; /* Ajustez la hauteur si nécessaire */
+  }
 }
 
+/* Pour les écrans de 768px et plus */
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
 
+/* Pour les écrans de 1024px et plus */
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
   .section {
-    margin-top: 7rem;
+    margin-top: 7rem; /* Ajustez la marge si nécessaire */
   }
 }
 
+/* Pour les écrans de 1280px et plus */
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
   .text, .b, .d, .footer-text {
-    font-size: 1.2vw;
+    font-size: 1.2vw; /* Ajustez en fonction de la largeur de l'écran */
     padding-left: 2rem;
     text-align: center;
   }
-  .footer-text{
-   font-size: var(--size-xl);
+  .footer-text {
+    font-size: var(--size-xl); /* Ajustez la taille de la police */
   }
 }
