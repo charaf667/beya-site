@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Single Input Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/csss2.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <style>
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center ">
+    <div class="container-fluid "style="height:100%">
+        <form class="form-container rounded" onsubmit="return validateForm()">
+            <div class="mb-3">
+                <label for="singleInput" class="form-label stylized-text">Faut trouver le mot de passe pour passer à l'autre page🎁⁉️</label>
+                <input type="text" class="form-control  offset-2 stylized-input" id="singleInput" placeholder="">
+            </div>
+            <button type="submit "  class="btn w-100 boton offset-2 stylized-button">bonne réponse ??!!!</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function validateForm() {
+            var inputValue = document.getElementById('singleInput').value;
+            var correctDate = '08/07/2022';
+
+            if (inputValue === correctDate) {
+                window.location.href = 'page 2.html';
+                return false; // Prevent form submission
+            } else {
+                alert('Mauvaise réponse. Veuillez réessayer.');
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

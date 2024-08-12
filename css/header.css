@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    padding: 1em 0;           /* Add some padding for spacing */
+}
+
+.header__bars {
+    color: var(--clr--light);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    display: block;
+}
+
+@media (min-width: 475px) {
+    .header {
+        justify-content: center;  /* Keep centering the content */
+        padding-left: 0;          /* Remove padding to keep it centered */
+    }
+}
+
+/*md*/
+@media (min-width: 768px) {
+    .header {
+        justify-content: center;  /* Ensure the content remains centered */
+        padding-top: 2em;
+        padding-bottom: 2rem;
+    }
+}
+
+/*lg*/
+@media (min-width: 1024px) {
+    .header {
+        justify-content: center;  /* Keep centering the content */
+    }
+}
